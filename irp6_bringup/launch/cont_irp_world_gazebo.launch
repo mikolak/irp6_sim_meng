@@ -25,7 +25,7 @@
   <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
 	args="-urdf -model irp6 -param robot_description"/>
 
-  <!-- ros_control rrbot launch file -->
-  <!--include file="$(find rrbot_control)/launch/rrbot_control.launch" /-->
+  <!-- ros_control irp6 launch file -->
+  <include file="$(find irp6_control)/launch/irp6_control.launch" />
 
 </launch>

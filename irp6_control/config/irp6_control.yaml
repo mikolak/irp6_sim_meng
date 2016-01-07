@@ -5,11 +5,66 @@ irp6:
     publish_rate: 50  
   
   # Position Controllers ---------------------------------------
-  joint1_position_controller:
+  t_joint1_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Irp6otmJoint1
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  t_joint2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Irp6otmJoint2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  t_joint3_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Irp6otmJoint3
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  t_joint4_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Irp6otmJoint4
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  t_joint5_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Irp6otmJoint5
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  t_joint6_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Irp6otmJoint6
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  t_joint7_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Irp6otmJoint7
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+ 
+  tg_joint1_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Irp6ottfgJoint1
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+  p_joint1_position_controller:
     type: effort_controllers/JointPositionController
     joint: Irp6pmJoint1
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  joint2_position_controller:
+  p_joint2_position_controller:
     type: effort_controllers/JointPositionController
     joint: Irp6pmJoint2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  p_joint3_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Irp6pmJoint3
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  p_joint4_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Irp6pmJoint4
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  p_joint5_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Irp6pmJoint5
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  p_joint6_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Irp6pmJoint6
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+ 
+  pg_joint1_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Irp6ptfgJoint1
     pid: {p: 100.0, i: 0.01, d: 10.0}

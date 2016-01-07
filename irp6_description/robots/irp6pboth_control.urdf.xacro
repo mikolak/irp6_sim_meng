@@ -11,30 +11,29 @@
     <child link="tl_base"/>
   </joint>
 
+  <link name="tl_base">
+    <inertial>
+      <mass value="100"/>
+      <inertia ixx="10" ixy="0" ixz="0" iyy="10" iyz="0" izz="10" />
+      <origin xyz="0 .6045 .125"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 .6045 .125" />
+      <geometry>
+        <box size=".462 1.609 .25" />
+      </geometry>
+      <material name="gray">
+        <color rgba=".2 .2 .2 1" />
+      </material>
+    </visual>
 
-<link name="tl_base">
-  <inertial>
-    <mass value="100"/>
-    <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
-    <origin xyz="0 0 0"/>
-  </inertial>
-  <visual>
-    <origin xyz="0 .6045 .125" />
-    <geometry>
-      <box size=".462 1.609 .25" />
-    </geometry>
-    <material name="gray">
-      <color rgba=".2 .2 .2 1" />
-    </material>
-  </visual>
-
-  <collision>
-    <origin xyz="0 .6045 .07" />
-    <geometry>
-      <box size=".462 1.609 .2" />
-    </geometry>
-  </collision>
-</link>
+    <collision>
+      <origin xyz="0 .6045 .125" />
+      <geometry>
+        <box size=".462 1.609 .25" />
+      </geometry>
+    </collision>
+  </link>
 
 <link name="tl_t">
   <inertial>
@@ -649,7 +648,7 @@
   </link>
 
 <joint name="pl_camera" type="fixed">
-    <origin rpy="0.0 0.0 -1.57" xyz="0.0551 0.0 0.13"/>
+    <origin rpy="0.0 0.0 -1.57" xyz="0.0551 0.0 0.15"/>
     <parent link="pl_6"/>
     <child link="p_c"/>
   </joint>
@@ -666,7 +665,97 @@
 <link name="p_c_optical_frame">
 </link>
 
-  <transmission name="tran1">
+
+  <!-- Definitions of gazebo transmission elements for simulation purpose -->
+  <transmission name="t_tran1">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="Irp6otmJoint1">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="Irp6otmMotor1">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="t_tran2">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="Irp6otmJoint2">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="Irp6otmMotor2">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="t_tran3">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="Irp6otmJoint3">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="Irp6otmMotor3">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="t_tran4">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="Irp6otmJoint4">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="Irp6otmMotor4">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  
+  <transmission name="t_tran5">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="Irp6otmJoint5">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="Irp6otmMotor5">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="t_tran6">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="Irp6otmJoint6">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="Irp6otmMotor6">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="t_tran7">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="Irp6otmJoint7">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="Irp6otmMotor7">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="tg_tran1">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="Irp6ottfgJoint1">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="Irp6ottfgMotor1">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="p_tran1">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="Irp6pmJoint1">
       <hardwareInterface>EffortJointInterface</hardwareInterface>
@@ -677,7 +766,7 @@
     </actuator>
   </transmission>
 
-  <transmission name="tran2">
+  <transmission name="p_tran2">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="Irp6pmJoint2">
       <hardwareInterface>EffortJointInterface</hardwareInterface>
@@ -688,4 +777,58 @@
     </actuator>
   </transmission>
 
+  <transmission name="p_tran3">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="Irp6pmJoint3">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="Irp6pmMotor3">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="p_tran4">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="Irp6pmJoint4">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="Irp6pmMotor4">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  
+  <transmission name="p_tran5">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="Irp6pmJoint5">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="Irp6pmMotor5">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="p_tran6">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="Irp6pmJoint6">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="Irp6pmMotor6">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="pg_tran1">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="Irp6ptfgJoint1">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="Irp6ptfgMotor1">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
 </robot>
