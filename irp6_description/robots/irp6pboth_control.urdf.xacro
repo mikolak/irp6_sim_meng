@@ -648,7 +648,7 @@
   </link>
 
 <joint name="pl_camera" type="fixed">
-    <origin rpy="0.0 0.0 -1.57" xyz="0.0551 0.0 0.15"/>
+    <origin rpy="0.0 0.0 -1.57" xyz="0.0551 0.0 0.1"/>
     <parent link="pl_6"/>
     <child link="p_c"/>
   </joint>

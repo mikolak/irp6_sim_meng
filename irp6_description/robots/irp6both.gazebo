@@ -48,7 +48,7 @@
   </gazebo>
 
   <!-- camera -->
-  <gazebo reference="p_c">
+  <gazebo reference="p_c_optical_frame">
     <sensor type="camera" name="p_camera">
       <update_rate>30.0</update_rate>
       <camera name="p_head">
