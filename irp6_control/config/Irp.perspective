@@ -1,0 +1,129 @@
+{
+  "keys": {}, 
+  "groups": {
+    "pluginmanager": {
+      "keys": {
+        "running-plugins": {
+          "type": "repr", 
+          "repr": "{u'rqt_service_caller/ServiceCaller': [1], u'rqt_reconfigure/Param': [1]}"
+        }
+      }, 
+      "groups": {
+        "plugin__rqt_service_caller__ServiceCaller__1": {
+          "keys": {}, 
+          "groups": {
+            "dock_widget__ServiceCallerWidget": {
+              "keys": {
+                "dockable": {
+                  "type": "repr", 
+                  "repr": "True"
+                }, 
+                "parent": {
+                  "type": "repr", 
+                  "repr": "None"
+                }
+              }, 
+              "groups": {}
+            }, 
+            "plugin": {
+              "keys": {
+                "splitter_orientation": {
+                  "type": "repr", 
+                  "repr": "2"
+                }
+              }, 
+              "groups": {}
+            }
+          }
+        }, 
+        "plugin__rqt_topic__TopicPlugin__1": {
+          "keys": {}, 
+          "groups": {
+            "plugin": {
+              "keys": {
+                "tree_widget_header_state": {
+                  "type": "repr(QByteArray.hex)", 
+                  "repr(QByteArray.hex)": "QtCore.QByteArray('000000ff0000000000000001000000000000000001000000000000000000000000000000000000042e000000050101000100000000000000000500000064ffffffff0000008100000003000000050000020e0000000100000003000001120000000100000003000000710000000100000003000000390000000100000003000000640000000100000003')", 
+                  "pretty-print": "                              d                     q     9     d    "
+                }
+              }, 
+              "groups": {}
+            }
+          }
+        }, 
+        "plugin__rqt_reconfigure__Param__1": {
+          "keys": {}, 
+          "groups": {
+            "dock_widget___plugincontainer_top_widget": {
+              "keys": {
+                "dockable": {
+                  "type": "repr", 
+                  "repr": "True"
+                }, 
+                "parent": {
+                  "type": "repr", 
+                  "repr": "None"
+                }
+              }, 
+              "groups": {}
+            }, 
+            "plugin": {
+              "keys": {
+                "splitter": {
+                  "type": "repr(QByteArray.hex)", 
+                  "repr(QByteArray.hex)": "QtCore.QByteArray('000000ff0000000000000002000000ae0000006401000000060100000001')", 
+                  "pretty-print": "         d     "
+                }, 
+                "_splitter": {
+                  "type": "repr(QByteArray.hex)", 
+                  "repr(QByteArray.hex)": "QtCore.QByteArray('000000ff00000000000000020000012c0000006401000000090100000002')", 
+                  "pretty-print": "       , d     "
+                }
+              }, 
+              "groups": {}
+            }
+          }
+        }, 
+        "plugin__rqt_pose_view__PoseView__1": {
+          "keys": {}, 
+          "groups": {
+            "plugin": {
+              "keys": {
+                "view_matrix": {
+                  "type": "repr", 
+                  "repr": "u'[[0.7322102189064026, 0.47745394706726074, -0.4857003092765808, 0.0], [-0.6771857738494873, 0.4342302680015564, -0.5940225124359131, 0.0], [-0.07271309942007065, 0.7638590931892395, 0.6412732601165771, 0.0], [0.0, -3.0, -17.5, 1.0]]'"
+                }
+              }, 
+              "groups": {}
+            }
+          }
+        }
+      }
+    }, 
+    "mainwindow": {
+      "keys": {
+        "geometry": {
+          "type": "repr(QByteArray.hex)", 
+          "repr(QByteArray.hex)": "QtCore.QByteArray('01d9d0cb000100000000005a0000005a000005240000024b00000064000000800000051a00000241000000000000')", 
+          "pretty-print": "     Z Z $ K d     A   "
+        }, 
+        "state": {
+          "type": "repr(QByteArray.hex)", 
+          "repr(QByteArray.hex)": "QtCore.QByteArray('000000ff00000000fd0000000100000003000004b700000193fc0100000006fb0000006c007200710074005f007200650063006f006e006600690067007500720065005f005f0050006100720061006d005f005f0031005f005f005f0070006c007500670069006e0063006f006e007400610069006e00650072005f0074006f0070005f0077006900640067006500740100000000000002160000010700fffffffb000000b4007200710074005f006a006f0069006e0074005f007400720061006a006500630074006f00720079005f0063006f006e00740072006f006c006c00650072005f005f004a006f0069006e0074005400720061006a006500630074006f007200790043006f006e00740072006f006c006c00650072005f005f0031005f005f004a006f0069006e0074005400720061006a006500630074006f007200790043006f006e00740072006f006c006c006500720055006901000001a7000001430000000000000000fb0000006c007200710074005f007200650063006f006e006600690067007500720065005f005f0050006100720061006d005f005f0032005f005f005f0070006c007500670069006e0063006f006e007400610069006e00650072005f0074006f0070005f00770069006400670065007401000001cf0000011b0000000000000000fb00000050007200710074005f0070006f00730065005f0076006900650077005f005f0050006f007300650056006900650077005f005f0031005f005f0047004c0056006900650077005700690064006700650074010000022b000000bf0000000000000000fb0000004c007200710074005f0074006f007000690063005f005f0054006f0070006900630050006c007500670069006e005f005f0031005f005f0054006f00700069006300570069006400670065007401000001b20000020a0000000000000000fb00000072007200710074005f0073006500720076006900630065005f00630061006c006c00650072005f005f005300650072007600690063006500430061006c006c00650072005f005f0031005f005f005300650072007600690063006500430061006c006c00650072005700690064006700650074010000021c0000029b0000029b00ffffff000004b70000000000000004000000040000000800000008fc00000001000000030000000100000036004d0069006e0069006d0069007a006500640044006f0063006b00570069006400670065007400730054006f006f006c0062006100720000000000ffffffff0000000000000000')", 
+          "pretty-print": "                 lrqt_reconfigure__Param__1___plugincontainer_top_widget           rqt_joint_trajectory_controller__JointTrajectoryController__1__JointTrajectoryControllerUi          lrqt_reconfigure__Param__2___plugincontainer_top_widget          Prqt_pose_view__PoseView__1__GLViewWidget          Lrqt_topic__TopicPlugin__1__TopicWidget          rrqt_service_caller__ServiceCaller__1__ServiceCallerWidget                            6MinimizedDockWidgetsToolbar        "
+        }
+      }, 
+      "groups": {
+        "toolbar_areas": {
+          "keys": {
+            "MinimizedDockWidgetsToolbar": {
+              "type": "repr", 
+              "repr": "8"
+            }
+          }, 
+          "groups": {}
+        }
+      }
+    }
+  }
+}

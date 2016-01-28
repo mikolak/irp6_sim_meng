@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <launch>
 
   <!-- Load joint controller configurations from YAML file to parameter server -->
@@ -8,7 +9,7 @@
 	output="screen" ns="/irp6" args="joint_state_controller
 					  t_joint1_position_controller
 					  t_joint2_position_controller
-				          t_joint3_position_controller
+				      t_joint3_position_controller
 					  t_joint4_position_controller
 					  t_joint5_position_controller
 					  t_joint6_position_controller
@@ -16,7 +17,7 @@
 					  tg_joint1_position_controller
 					  p_joint1_position_controller
 					  p_joint2_position_controller
-				          p_joint3_position_controller
+				      p_joint3_position_controller
 					  p_joint4_position_controller
 					  p_joint5_position_controller
 					  p_joint6_position_controller

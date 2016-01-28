@@ -8,31 +8,31 @@ irp6:
   t_joint1_position_controller:
     type: effort_controllers/JointPositionController
     joint: Irp6otmJoint1
-    pid: {p: 100.0, i: 0.01, d: 10.0}
+    pid: {p: 10000.0, i: 100.0, d: 1000.0}
   t_joint2_position_controller:
     type: effort_controllers/JointPositionController
     joint: Irp6otmJoint2
-    pid: {p: 100.0, i: 0.01, d: 10.0}
+    pid: {p: 1000.0, i: 100.01, d: 100.0}
   t_joint3_position_controller:
     type: effort_controllers/JointPositionController
     joint: Irp6otmJoint3
-    pid: {p: 100.0, i: 0.01, d: 10.0}
+    pid: {p: 1000.0, i: 100.01, d: 100.0}
   t_joint4_position_controller:
     type: effort_controllers/JointPositionController
     joint: Irp6otmJoint4
-    pid: {p: 100.0, i: 0.01, d: 10.0}
+    pid: {p: 1000.0, i: 100.01, d: 100.0}
   t_joint5_position_controller:
     type: effort_controllers/JointPositionController
     joint: Irp6otmJoint5
-    pid: {p: 100.0, i: 0.01, d: 10.0}
+    pid: {p: 1000.0, i: 100.01, d: 100.0}
   t_joint6_position_controller:
     type: effort_controllers/JointPositionController
     joint: Irp6otmJoint6
-    pid: {p: 100.0, i: 0.01, d: 10.0}
+    pid: {p: 1000.0, i: 100.01, d: 100.0}
   t_joint7_position_controller:
     type: effort_controllers/JointPositionController
     joint: Irp6otmJoint7
-    pid: {p: 100.0, i: 0.01, d: 10.0}
+    pid: {p: 1000.0, i: 100.01, d: 100.0}
  
   tg_joint1_position_controller:
     type: effort_controllers/JointPositionController

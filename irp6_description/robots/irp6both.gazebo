@@ -3,7 +3,114 @@
   <gazebo>
     <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
       <robotNamespace>/irp6</robotNamespace>
+      <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
     </plugin>
+  </gazebo>
+  
+  <!-- friction coefficients -->
+  <gazebo reference="tl_base">
+	<mu1>0.3</mu1>
+	<mu2>0.3</mu2>
+	<dampingFactor>0.1</dampingFactor>
+	<selfCollide>true</selfCollide>
+  </gazebo>
+  
+  <gazebo reference="tl_t">
+	<mu1>0.3</mu1>
+	<mu2>0.3</mu2>
+	<dampingFactor>0.1</dampingFactor>
+	<selfCollide>true</selfCollide>
+  </gazebo>
+  
+  <gazebo reference="tl_1">
+	<mu1>0.3</mu1>
+	<mu2>0.3</mu2>
+	<dampingFactor>0.1</dampingFactor>
+	<selfCollide>true</selfCollide>
+  </gazebo>
+  
+  <gazebo reference="tl_2">
+	<mu1>0.3</mu1>
+	<mu2>0.3</mu2>
+	<dampingFactor>0.1</dampingFactor>
+	<selfCollide>true</selfCollide>
+  </gazebo>
+  
+  <gazebo reference="tl_3">
+	<mu1>0.3</mu1>
+	<mu2>0.3</mu2>
+	<dampingFactor>0.1</dampingFactor>
+	<selfCollide>true</selfCollide>
+  </gazebo>
+  
+  <gazebo reference="tl_4">
+	<mu1>0.3</mu1>
+	<mu2>0.3</mu2>
+	<dampingFactor>0.1</dampingFactor>
+	<selfCollide>true</selfCollide>
+  </gazebo>
+  
+  <gazebo reference="tl_5">
+	<mu1>0.3</mu1>
+	<mu2>0.3</mu2>
+	<dampingFactor>0.1</dampingFactor>
+	<selfCollide>true</selfCollide>
+  </gazebo>
+  
+  <gazebo reference="tl_6">
+	<mu1>0.3</mu1>
+	<mu2>0.3</mu2>
+	<dampingFactor>0.1</dampingFactor>
+	<selfCollide>true</selfCollide>
+  </gazebo>
+  
+  <gazebo reference="pl_base">
+	<mu1>0.3</mu1>
+	<mu2>0.3</mu2>
+	<dampingFactor>0.1</dampingFactor>
+	<selfCollide>true</selfCollide>
+  </gazebo>
+  
+  <gazebo reference="pl_1">
+	<mu1>0.3</mu1>
+	<mu2>0.3</mu2>
+	<dampingFactor>0.1</dampingFactor>
+	<selfCollide>true</selfCollide>
+  </gazebo>
+  
+  <gazebo reference="pl_2">
+	<mu1>0.3</mu1>
+	<mu2>0.3</mu2>
+	<dampingFactor>0.1</dampingFactor>
+	<selfCollide>true</selfCollide>
+  </gazebo>
+  
+  <gazebo reference="pl_3">
+	<mu1>0.3</mu1>
+	<mu2>0.3</mu2>
+	<dampingFactor>0.1</dampingFactor>
+	<selfCollide>true</selfCollide>
+  </gazebo>
+  
+  <gazebo reference="pl_4">
+	<mu1>0.3</mu1>
+	<mu2>0.3</mu2>
+	<dampingFactor>0.1</dampingFactor>
+	<selfCollide>true</selfCollide>
+  </gazebo>
+  
+  <gazebo reference="pl_5">
+	<mu1>0.3</mu1>
+	<mu2>0.3</mu2>
+	<dampingFactor>0.1</dampingFactor>
+	<selfCollide>true</selfCollide>
+  </gazebo>
+  
+  <gazebo reference="pl_6">
+	<mu1>0.3</mu1>
+	<mu2>0.3</mu2>
+	<dampingFactor>0.1</dampingFactor>
+	<selfCollide>true</selfCollide>
   </gazebo>
 
   <!-- camera -->
